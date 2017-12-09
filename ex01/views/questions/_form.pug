@@ -1,0 +1,38 @@
+.form-group
+  label(for="title") Title
+  input.form-control(type="text", name="title", placeholder="What's your Event name?", value=question.title)
+.form-group
+  label(for="question") Place
+  textarea.form-control(name="content", rows="1")= question.content
+.form-group
+  label(for="question") Time
+  textarea.form-control(name="content", rows="1")= question.content
+.form-group
+  label(for="question") Detail
+  textarea.form-control(name="content", rows="5")= question.content
+.form-group
+  label(for="tags") Tags
+  input.form-control(type="text", name="tags", placeholder="tags separated by spaces", value=question.tags ? question.tags.join(" ") : "")
+.form-group
+  <button type="button" class="btn btn-primary">무료</button>
+  <button type="button" class="btn btn-primary">유료</button>
+  textarea.form-control(name="content", rows="1")= question.content
+.form-group
+  <button  type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">이벤트 종류</button>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="#">sing</a>
+  <a class="dropdown-item" href="#">party</a>
+  <a class="dropdown-item" href="#">seminar</a>
+  <a class="dropdown-item" href="#">tour</a>
+  <a class="dropdown-item" href="#">rest</a>
+.form-group
+  <button  type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">이벤트 분야</button>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="#">food</a>
+  <a class="dropdown-item" href="#">fashion</a>
+  <a class="dropdown-item" href="#">family</a>
+  <a class="dropdown-item" href="#">science</a>
+  <a class="dropdown-item" href="#">school</a>
+.form-group
+  label(for="question") 조직이름 && 간단한 설명
+  textarea.form-control(name="content", rows="5")= question.content
